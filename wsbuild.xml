@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Web Service Build" default="wsimport">
+    <target name="wsimport">
+        <exec executable="wsimport" >
+            <arg line="-keep -s E:\CoreWorkspace\WSJavaR\src -p rp3.service.client http://localhost:9898/MDM?wsdl"/>
+        </exec>         
+    </target>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Start MDM Server">
+    <target name="run" depends="compile">
+        <exec executable="java" >
+            <arg line="E:\CoreWorkspace\WSJavaR\src\rp3\Server"/>
+        </exec>         
+    </target>
+    <target name="compile">
+        <exec executable="javac" >
+            <arg line="E:\CoreWorkspace\WSJavaR\src\rp3\*.java"/>
+        </exec>         
+    </target>
+</project>
