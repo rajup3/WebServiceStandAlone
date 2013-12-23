@@ -12,7 +12,7 @@ import rp3.service.mdm.messages.GetUserListResponse;
 public interface IMDM {
 
 	@WebMethod
-	public GetUserListResponse getUserList(GetUserListRequest request);
+	public GetUserListResponse getUserList(GetUserListRequest request) throws Exception;
 	@WebMethod
 	public GetUserDetailResponse getUserDetail(GetUserDetailRequest request);
 	
