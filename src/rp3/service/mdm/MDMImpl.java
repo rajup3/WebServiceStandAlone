@@ -11,16 +11,16 @@ import rp3.service.mdm.messages.GetUserListRequest;
 import rp3.service.mdm.messages.GetUserListResponse;
 
 @WebService(
-		serviceName = "MDMService",
-		name = "MDM",
-		portName = "MDMPort"
+		serviceName = "MDMServiceName",
+		name = "MDMName",
+		portName = "MDMPortName"
 )
 
 public class MDMImpl extends MDMBase implements IMDM{
 
 	@WebMethod
 	@WebResult(name="GetUserListResponse") 
-	public GetUserListResponse getUserList(@WebParam(name="GetUserListRequest") GetUserListRequest request) throws Exception{
+	public GetUserListResponse getUserList(@WebParam(name="GetUserListRequest") GetUserListRequest request) throws IllegalStateException, NullPointerException {
 		
 		GetUserListResponse response = new GetUserListResponse();
 		StringBuffer sysUserList = new StringBuffer("");  
